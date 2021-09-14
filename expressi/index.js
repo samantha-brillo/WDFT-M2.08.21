@@ -11,11 +11,11 @@ app.use(express.static("public"));
 
 //Rutas:
 app.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/public/views/home-page.html`);
+  res.sendFile(`${__dirname}/views/home-page.html`);
 });
 
 app.get("/cat", (req, res) => {
-  res.sendFile(`${__dirname}/public/views/cat-page.html`);
+  res.sendFile(`${__dirname}/views/cat-page.html`);
 });
 
 app.listen(3000, () => {
